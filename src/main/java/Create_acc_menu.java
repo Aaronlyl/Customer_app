@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class Create_acc_menu extends JPanel{
     //Probably a more secure idea to remove variables later and directly upload to servlet
-    private String usr, pw;
+    private String usr, pw, c_pw;
     private JButton register_btn;
     private JTextField usr_tfield, pw_tfield, c_pw_tfield ;
     private JLabel check = new JLabel();
@@ -25,17 +25,13 @@ public class Create_acc_menu extends JPanel{
             //Add implementation of database here
             @Override
             public void actionPerformed(ActionEvent e) {
-                String pw = pw_tfield.getText();
-                String c_pw = c_pw_tfield.getText();
-                String teststring = "1234";
-                System.out.println(pw);
-                System.out.println(c_pw);
-                System.out.println(pw==teststring);
-                System.out.println(c_pw==teststring);
+                usr = usr_tfield.getText();
+                pw = pw_tfield.getText();
+                c_pw = c_pw_tfield.getText();
 
                 boolean create_acc = false;
                 String checktest;
-                if(pw_tfield.getText() == c_pw_tfield.getText() && usr_tfield.getText().isEmpty()==false ) {
+                if(pw.equals(c_pw) && usr_tfield.getText().isEmpty()==false ) {
                     checktest =  "Account Created" ;
                     create_acc = true;
                     
@@ -50,8 +46,7 @@ public class Create_acc_menu extends JPanel{
 
                 }
                 if(create_acc) {
-                    usr = usr_tfield.getText();
-                    pw = pw_tfield.getText();
+                    
                 }
                 check.setText(checktest);
                 revalidate();
@@ -66,6 +61,7 @@ public class Create_acc_menu extends JPanel{
         add(pw_tfield);
         add(new JLabel("Confirm password"));
         add(c_pw_tfield);
+        add(new JLabel(""));
         add(register_btn);
         add(check);
     }
