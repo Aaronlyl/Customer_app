@@ -21,6 +21,7 @@ public class Signin_menu extends JPanel {
             public void actionPerformed(java.awt.event.ActionEvent e) {
                 String checktext = (username_tfield.getText().isEmpty() || password_tfield.getText().isEmpty()) ? "Username or password is empty" : "checking login credentials...";
                 check.setText(checktext);
+                if(checktext.equals("checking login credentials...")) Interface.launch_main_menu();;
                 revalidate();
 
     }
