@@ -1,0 +1,25 @@
+Story put together – Maciej  
+
+Mr. Holloway, the owner of PHAB Pharmacies been running his pharmacy business with 3 branches in Paddington near the Hospital, Central London Opposite the Ritz in Green park 
+(Main), East London near Mile End. The company’s sales have dropped due to COVID. The store currently relies on old inefficient methods for tracking stock. These involve using
+pen and paper to tick off items every time a customer buys them. However, this has proven quite problematic and introduces errors as the pharmacy gets quite busy during the
+day and it becomes easy to lose track of stock to the point that there is not enough left to sell.  
+
+Mr. Holloway has thus requested us to create a digital solution and hopes that a database and stock tracking app for the employees, as well as an online shop for customers, would
+be a great improvement. 
+
+The stock tracking app should connect to a database that contains a list of all drug stocks, starting with over-the-counter drugs before progressing on to other drugstore 
+products (eg. shampoos). The app should allow the employee to check the item’s stock and its location in the store. It should also issue a warning when the stock of any medicine
+falls below 20% of full stock. If possible, when a certain number of products’ stocks are below 20%, a notice telling the employee to bulk-order said product from the supplier
+will also have to be issued to minimize delivery costs. Also, the app should be able to calculate the total revenue and profit each day. It should apply additional rules such 
+as allowing only one packet (16 tablets) of paracetamol to be sold in each transaction. In general, it should maintain a balance between going out of stock and ordering too 
+many things.  
+
+The customer side of things should involve an online webstore containing all 3 branches and a method for customers to search for a drug and check its price, location in each 
+branch, and availability once they sign up with their name address, and credit card number. If possible, maps of store layout of the three branches should also be available
+to the customers on the app to make it easier to find their wanted products. The customers should also be able to place an order and the website should then update the database. 
+Customers are not allowed to order unless they have registered an account. Additional rules such as not selling more than one package of paracetamol should also be applied for 
+online orders. Online orders will use Paddington branch’s price.  
+
+As an additional condition, medication pricing should be twice at the main branch near The Ritz than that in Paddington and 1.3 times the price in Paddington than that in east 
+London. 

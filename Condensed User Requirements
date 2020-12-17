@@ -1,0 +1,21 @@
+Mr Holloway owns a chain of 3 pharmacies with location in Green Park (Main branch), Paddington and Mile End. 
+Previously he has been using pen and paper to track the stock of medicine in each store, where he crosses out the medicine when someone made a purchase. 
+However, this method is inefficient and can introduce error. Therefore, he wants our team to create an app that can replace the existing tracking system. 
+This app for the employees should be able to:
+
+- Track the stock, when a purchase is made, the stock of how many packages of each medicine is left is automatically updated 
+- Give warning whenever the stock of any medicine goes below 20%, and allow the pharmacy to buy medicine from the suppliers in bulk to reduce delivery fee 
+- Calculate the daily revenue and profit 
+
+He also wants the team to create a web app for the customers which should be able to: 
+
+- Customer can order through the web and the items are delivered to their door; these items also come from the same stock as those sold at store front. 
+  In this case they have to create an account, sign up, put in their details e.g. name, address, and payment info 
+- Customer wants to buy in store but want to check whether the branch they go to has a stock of the medicine they want 
+- Customer wants to buy in store so they want to know which aisle they have to go to for the specific medicine that they want so the app should show the store layout map
+
+For both app  
+
+- can apply the limitations for example, not allowing the customer to buy more than one package of paracetamol per transaction 
+- The same medicine stock database should be updated when purchase has been made in-store or online 
+- The total revenue and profit should be calculated from online and storefront purchase combined.  
