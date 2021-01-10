@@ -3,10 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb10c835-a90f-4b12-a13f-8387942256fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+    <list default="true" id="bb10c835-a90f-4b12-a13f-8387942256fa" name="Default Changelist" comment="branch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +67,15 @@
       </state>
     </system>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="customerfunctionstest" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mpVf1wW3rTMxQsMFAw3iPtf38C" />
@@ -95,24 +121,51 @@
       <option name="presentableId" value="Default" />
       <updated>1610190618321</updated>
     </task>
+    <task id="LOCAL-00001" summary="branch">
+      <created>1610247869625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610247869625</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="branch" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1222" height="161" key="GridCell.Tab.0.bottom" timestamp="1610191873717">
+    <state width="1222" height="161" key="GridCell.Tab.0.bottom" timestamp="1610248262707">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610191873717" />
-    <state width="1222" height="161" key="GridCell.Tab.0.center" timestamp="1610191873717">
+    <state width="1222" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610248262707" />
+    <state width="1222" height="161" key="GridCell.Tab.0.center" timestamp="1610248262707">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610191873717" />
-    <state width="1222" height="161" key="GridCell.Tab.0.left" timestamp="1610191873717">
+    <state width="1222" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610248262707" />
+    <state width="1222" height="161" key="GridCell.Tab.0.left" timestamp="1610248262706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610191873717" />
-    <state width="1222" height="161" key="GridCell.Tab.0.right" timestamp="1610191873717">
+    <state width="1222" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610248262706" />
+    <state width="1222" height="161" key="GridCell.Tab.0.right" timestamp="1610248262707">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610191873717" />
+    <state width="1222" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610248262707" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610247874544">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1610247874544" />
   </component>
 </project>
