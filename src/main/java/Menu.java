@@ -23,6 +23,7 @@ public class Menu extends JPanel {
     private JScrollPane scrollableList;
     private JLabel orderPlaced;
     private JTextField itemQuantity;
+    private JLabel testwarn;
 
     String displayedDetails;
 
@@ -107,13 +108,47 @@ public class Menu extends JPanel {
         deliveryPanel = new JPanel();
         JButton order_btn = new JButton(" Order Delivery");
         orderPlaced = new JLabel("Thank you! Your order has been placed.");
+        JLabel testwarning = new JLabel();
         ActionListener orderPlacedAL=new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Order placed");
                 deliveryPanel.add(orderPlaced);
-            }
-        };
+
+                    String quantity = itemQuantity.getText();
+                    int int_quan = Integer.parseInt(quantity);
+
+                    String manu = search_drug.getSelectedItem().toString().toLowerCase();
+                    String name = search_drugname.getSelectedItem().toString().toLowerCase();
+                    String message2 = manu + "@" + name;
+
+                    POST_Requests p2 = new POST_Requests(message2, "https://phabservlet1.herokuapp.com/inputMN");
+                    GET_Requests g3 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOne");
+                    int int_g3 = Integer.valueOf(g3.returnText());
+
+                    // if more than 1 of a limitOne item is chosen - error
+                    if(int_g3==1&&int_quan!=1){
+                        testwarning.setText("INPUT QUANTITY EXCEEDS MAXIMUM");
+                        testwarning.setForeground(Color.RED);
+                        System.out.println("Error");
+                    }
+
+                    // else decrease stock by quantity input
+                    else {
+                        GET_Requests G = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
+                        for (int i = 0; i < int_quan; i++) {
+                            POST_Requests p3 = new POST_Requests(message2, "https://phabservlet1.herokuapp.com/inputMN");
+                            G.makeGetRequest("https://phabservlet1.herokuapp.com/_decreaseStock");
+                            System.out.println("Stock Updated");
+                            testwarning.setText("Item updated");
+                            testwarning.setForeground(Color.GREEN);
+                        }
+                    }
+                    deliveryPanel.add(testwarning);
+
+                }
+            };
+
         order_btn.addActionListener(orderPlacedAL);
         deliveryPanel.add(order_btn);
 
