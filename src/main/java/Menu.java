@@ -21,6 +21,8 @@ public class Menu extends JPanel {
     private JTextField drugDetails;
     private JList drugList;
     private JScrollPane scrollableList;
+    private JLabel orderPlaced;
+    private JTextField itemQuantity;
 
     String displayedDetails;
 
@@ -65,7 +67,8 @@ public class Menu extends JPanel {
         search_drugname.setEditable(false); // idk if it should be editable
         AutoCompletion.enable(search_drugname);
         searchForDrug.add(search_drugname);
-
+        itemQuantity = new JTextField("Input Item Quantity");
+        searchForDrug.add(itemQuantity);
         // searchForDrug.add(drugName); test
         searchButton = new JButton("Select Item");
         searchForDrug.add(searchButton);
@@ -103,7 +106,17 @@ public class Menu extends JPanel {
         searchForDrug.add(drugDetails);
         deliveryPanel = new JPanel();
         JButton order_btn = new JButton(" Order Delivery");
+        orderPlaced = new JLabel("Thank you! Your order has been placed.");
+        ActionListener orderPlacedAL=new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Order placed");
+                deliveryPanel.add(orderPlaced);
+            }
+        };
+        order_btn.addActionListener(orderPlacedAL);
         deliveryPanel.add(order_btn);
+
         storePanel = new JPanel();
         storePanel.setLayout(new GridLayout(1, 2));
         JComboBox branch_Selector = new JComboBox<String>(branch_list);
