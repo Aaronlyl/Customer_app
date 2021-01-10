@@ -18,6 +18,9 @@ public class Menu extends JPanel {
     private JLabel searchTitle;
     private JLabel itemDetails;
     private JTextField drugDetails;
+    private JList drugList;
+    private JScrollPane scrollableList;
+
 
     Menu() {
         setLayout(new GridLayout(2, 1));
@@ -131,12 +134,34 @@ public class Menu extends JPanel {
         };
 
         branch_Selector.addActionListener(branchSelectorActionListener);
-        branchPanel.add(new JTextArea("%Availabillty and Price listed here%"));
+        //branchPanel.add(new JTextArea("%Availabillty and Price listed here%"));
         storePanel.add(branchPanel);
 
-        JTextArea druglist = new JTextArea("%Drug List here");
-        druglist.setEditable(false);
-        storePanel.add(druglist);
+        String list[] = {
+                // Colds and flu
+                "Vicks Vaporub","Vicks First Defence","Gsk Night Nurse","Gsk Night Nurse",
+                "Lemsip Max","Lemsip Standard","Sudafed Day and Night","Sudafed Max","Benylin Mucus relief",
+                "Benylin 4 flu",
+                // Skincare
+                "E45 Psoriasis cream","Eurax Skin cream","Eucerin Skin relief cream","Eucerin Face scrub",
+                "Dermalex Psoriasis cream","Dermalex Repair and Restore","Dermalex Eczema cream",
+                "Dermalex Eczema cream","Cetaphil Moisturising cream","Cetaphil Exfoliating cleanser",
+                // Headaches and pain relief
+                "Nurofen Meltlets","Nurofen Express","Nurofen Max strength","Nurofen Standard",
+                "Cuprofen Max strength","Solpadeine Headache","Anadin Extra","Anadin Triple action",
+                "Anadin Original","Disprin Soluble",
+                // Digestion
+                "Dioralyte Blackcurrant","Dioralyte Lemon","Gaviscon Chewable","Senokot Max","Gaviscon Advance",
+                // Allergies
+                "Benadryl Relief","Piriteze tabs","Beconase Relief",
+                // First aid
+                "Dettol	Antiseptic","Dettol Hand sanitizer","Elastoplast plasters","TCP Liquid"};
+
+        drugList = new JList(list);
+        scrollableList = new JScrollPane(drugList);
+        storePanel.add(scrollableList);
+
+
 
         add(searchForDrug);
         add(deliveryPanel);
