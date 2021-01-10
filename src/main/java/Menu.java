@@ -24,7 +24,10 @@ public class Menu extends JPanel{
         branchPanel.add(branch_Selector);
         branchPanel.add(new JTextArea("%Availabillty and Price listed here%"));
         storePanel.add(branchPanel);
-        storePanel.add(new JTextArea("%Drug List here"));
+
+        JTextArea druglist = new JTextArea("%Drug List here");
+        druglist.setEditable(false);
+        storePanel.add(druglist);
 
         add(deliveryPanel);
         add(storePanel);
