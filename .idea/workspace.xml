@@ -60,12 +60,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Customer_app" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -206,22 +200,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="AL for order delivery (add label)" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="54" key="GridCell.Tab.0.bottom" timestamp="1610253017691">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1610285378050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="54" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610253017691" />
-    <state width="1237" height="54" key="GridCell.Tab.0.center" timestamp="1610253017690">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610285378050" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1610285378050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="54" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610253017690" />
-    <state width="1237" height="54" key="GridCell.Tab.0.left" timestamp="1610253017690">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610285378050" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1610285378050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="54" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610253017690" />
-    <state width="1237" height="54" key="GridCell.Tab.0.right" timestamp="1610253017691">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610285378050" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1610285378050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="54" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610253017691" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610285378050" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610252694794">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

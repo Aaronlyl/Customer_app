@@ -21,7 +21,6 @@ public class Menu extends JPanel {
     private JTextField drugDetails;
     private JList drugList;
     private JScrollPane scrollableList;
-    private JLabel orderPlaced;
     private JTextField itemQuantity;
     private JLabel testwarn;
 
@@ -90,7 +89,7 @@ public class Menu extends JPanel {
                 String jsonString2 = jsonString.substring(17, length2);
 
                 String detailsGet = g.returnText();
-                String[] split_details = detailsGet.split("\\s+");
+                String[] split_details = detailsGet.split(",");
                 displayedDetails = split_details[0]+" "+split_details[1]+" "+split_details[2]+", "+split_details[3]+" pounds";
 
                 drugDetails.setText(displayedDetails);
@@ -107,13 +106,11 @@ public class Menu extends JPanel {
         searchForDrug.add(drugDetails);
         deliveryPanel = new JPanel();
         JButton order_btn = new JButton(" Order Delivery");
-        orderPlaced = new JLabel("Thank you! Your order has been placed.");
         JLabel testwarning = new JLabel();
         ActionListener orderPlacedAL=new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Order placed");
-                deliveryPanel.add(orderPlaced);
 
                     String quantity = itemQuantity.getText();
                     int int_quan = Integer.parseInt(quantity);
@@ -140,7 +137,7 @@ public class Menu extends JPanel {
                             POST_Requests p3 = new POST_Requests(message2, "https://phabservlet1.herokuapp.com/inputMN");
                             G.makeGetRequest("https://phabservlet1.herokuapp.com/_decreaseStock");
                             System.out.println("Stock Updated");
-                            testwarning.setText("Item updated");
+                            testwarning.setText("Thank you, your order has been placed");
                             testwarning.setForeground(Color.GREEN);
                         }
                     }
