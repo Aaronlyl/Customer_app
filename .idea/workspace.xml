@@ -98,6 +98,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager" selected="Gradle.Customer_app [run]">
     <configuration name="Customer_app [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -197,22 +198,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="searchfordrug added" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1610250528939">
+    <state width="1222" height="161" key="GridCell.Tab.0.bottom" timestamp="1610251562992">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610250528939" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1610250528939">
+    <state width="1222" height="161" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610251562992" />
+    <state width="1222" height="161" key="GridCell.Tab.0.center" timestamp="1610251562991">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610250528939" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1610250528939">
+    <state width="1222" height="161" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610251562991" />
+    <state width="1222" height="161" key="GridCell.Tab.0.left" timestamp="1610251562991">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610250528939" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1610250528939">
+    <state width="1222" height="161" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610251562991" />
+    <state width="1222" height="161" key="GridCell.Tab.0.right" timestamp="1610251562992">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610250528939" />
+    <state width="1222" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610251562992" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1610249687171">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Scanner;
 
 public class Menu extends JPanel {
 
@@ -20,6 +21,8 @@ public class Menu extends JPanel {
     private JTextField drugDetails;
     private JList drugList;
     private JScrollPane scrollableList;
+
+    String displayedDetails;
 
 
     Menu() {
@@ -81,7 +84,12 @@ public class Menu extends JPanel {
                 String jsonString = gson.toJson(g);
                 int length2 = jsonString.length() - 2;
                 String jsonString2 = jsonString.substring(17, length2);
-                drugDetails.setText(jsonString2);
+
+                String detailsGet = g.returnText();
+                String[] split_details = detailsGet.split("\\s+");
+                displayedDetails = split_details[0]+" "+split_details[1]+" "+split_details[2]+", "+split_details[3]+" pounds";
+
+                drugDetails.setText(displayedDetails);
                 System.out.println(jsonString);
             }
         };
