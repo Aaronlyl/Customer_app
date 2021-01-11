@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 public class Create_acc_menu extends JPanel{
     //Probably a more secure idea to remove variables later and directly upload to servlet
     private String usr, pw;
-    private JButton register_btn;
+    private JButton register_btn, back_btn;
     private JTextField usr_tfield, pw_tfield, c_pw_tfield, fname_tfield, lname_tfield, email_tfield ;
     private JLabel check = new JLabel();
 
@@ -24,7 +24,15 @@ public class Create_acc_menu extends JPanel{
         c_pw_tfield = new JTextField("00000000");
         email_tfield = new JTextField("davidjones@test.com");
         register_btn = new JButton("Register");
+        back_btn = new JButton("Back");
 
+        back_btn.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Interface.launch_signin_menu();
+            }
+        });
         register_btn.addActionListener(new ActionListener() {
             //Add implementation of database here
             @Override
@@ -93,8 +101,8 @@ public class Create_acc_menu extends JPanel{
         add(pw_tfield);
         add(new JLabel("Confirm password"));
         add(c_pw_tfield);
-        add(new JLabel(""));
         add(register_btn);
+        add(back_btn);
         add(check);
     }
 }

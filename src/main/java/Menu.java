@@ -15,7 +15,7 @@ public class Menu extends JPanel {
     private JPanel branchPanel;
     private String[] branch_list = {"Green Park", "Paddington", "Mile End"};
     private JPanel searchForDrug;
-    private JButton searchButton;
+    private JButton searchButton, back_btn;
     private JLabel searchTitle;
     private JLabel itemDetails;
     private JTextField drugDetails;
@@ -97,6 +97,14 @@ public class Menu extends JPanel {
             }
         };
         searchButton.addActionListener(searchButtonAL);
+        
+        back_btn.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Interface.launch_signin_menu();
+            }
+        });
 
         itemDetails = new JLabel("Item Details:");//create title
         searchForDrug.add(itemDetails);
