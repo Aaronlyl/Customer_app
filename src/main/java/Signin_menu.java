@@ -29,12 +29,17 @@ public class Signin_menu extends JPanel {
                     //check what is returned
                     System.out.println(got_message);
                     if(got_message.equals("Login successful")) {
-                        Interface.launch_main_menu();
                         checktext = "Login successful";
+                        check.setText(checktext);
+                        check.setForeground(Color.green);
+                        revalidate();
+                        Interface.launch_main_menu();
+
                     }
                     else {
                         checktext = "Username or password incorrect, try again.";
                         check.setText(checktext);
+                        check.setForeground(Color.red);
                     }
 
                 }
