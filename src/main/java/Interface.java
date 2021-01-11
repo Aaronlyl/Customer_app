@@ -12,7 +12,7 @@ public class Interface {
         f.getContentPane().add(new Signin_menu());
         f.setSize(new Dimension(600, 500));
         f.setVisible(true);
-        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        f.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     }
 
     public static void launch_account_menu() {

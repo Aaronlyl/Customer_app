@@ -13,6 +13,7 @@ public class Signin_menu extends JPanel {
     private JLabel check = new JLabel();
 
     public Signin_menu() {
+        String url = "https://phabservlet1.herokuapp.com/verify_user";
         setLayout(new GridLayout(10, 1, 1, 1)); // Setting layout grid
         signin_btn = new JButton("Sign in");
         create_acc_btn = new JButton("Create new account");
@@ -21,7 +22,22 @@ public class Signin_menu extends JPanel {
             public void actionPerformed(java.awt.event.ActionEvent e) {
                 String checktext = (username_tfield.getText().isEmpty() || password_tfield.getText().isEmpty()) ? "Username or password is empty" : "checking login credentials...";
                 check.setText(checktext);
-                if(checktext.equals("checking login credentials...")) Interface.launch_main_menu();;
+                if(checktext.equals("checking login credentials...")) {
+                    String get_message = username_tfield.getText()+"@"+password_tfield.getText();
+                    SIGNIN_Requests r = new SIGNIN_Requests();
+                    String got_message = r.makePostRequest(get_message, url);
+                    //check what is returned
+                    System.out.println(got_message);
+                    if(got_message.equals("Login successful")) {
+                        Interface.launch_main_menu();
+                        checktext = "Login successful";
+                    }
+                    else {
+                        checktext = "Username or password incorrect, try again.";
+                        check.setText(checktext);
+                    }
+
+                }
                 revalidate();
 
     }
@@ -36,9 +52,9 @@ public class Signin_menu extends JPanel {
         });
 
         /* Gridlayout and adding components */ /*IMPORTANT!! Gridlayout is extremely inefficient, need revising */
-        username_tfield = new JTextField();
+        username_tfield = new JTextField("test");
         username_tfield.setPreferredSize(new Dimension(100,30));
-        password_tfield = new JTextField();
+        password_tfield = new JTextField("12345678");
         password_tfield.setPreferredSize(new Dimension(100,30));
         check.setForeground(Color.red);
         JLabel title = new JLabel("PHAB Pharmacy Customer App");
