@@ -30,14 +30,11 @@ public class Interface {
     }
 
     public static void launch_main_menu() {
-        JFrame mf = new JFrame(gc);
-        mf.getContentPane().add(new Menu());
-        mf.getContentPane().removeAll();
-        mf.getContentPane().add(new Menu());
-        mf.setVisible(true);
-        mf.setSize(new Dimension(1024,768));
-        mf.setPreferredSize(new Dimension(1024,768));
-        f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        f.getContentPane().removeAll();
+        f.getContentPane().add(new Menu());
+        f.setVisible(true);
+        f.setSize(new Dimension(1024,768));
+        f.setPreferredSize(new Dimension(1024,768));
     }
 
 }
